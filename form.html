@@ -1,0 +1,73 @@
+!
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>IMC</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <main>
+
+        <body style="background-color: #e2edfa;">
+            <div class="container justify-content-center">
+                <h1 class="text-center">Cálculo de IMC</h1>
+                <form action="calcular.php" method="POST" enctype="multipart/form-data" class="form">
+                    <fieldset class="fieldset">
+                        <br>
+                        <div class="col-md-6 offset-md-3">
+                            <label for="nome" class="h4">Nome:</label> <br>
+                            <input type="text" class="form-control" name="nome" id="nome" required placeholder="Digite seu nome">
+                        </div>
+                        <br> 
+                        <div class="col-md-6 offset-md-3">
+                            <label for="peso" class="h4">Peso:</label> <br>
+                            <input type="text" class="form-control" name="peso" id="peso" required placeholder="Digite seu peso em Kg">
+                        </div>
+                        <br><br>
+                        <div class="col-md-6 offset-md-3">
+                            <label for="altura" class="h4">Altura:</label> <br>
+                            <input type="text" class="form-control" name="altura" id="altura" required placeholder="Digite sua altura em metros">
+                        </div>
+                        <br>
+                        <div class="col-md-6 offset-md-3">
+                            <label for="sexo" class="h4">Sexo:</label>
+                            <br>
+                            <input type="radio" name="sexo" value="m" id="sexo" required> Masculino
+                            <input type="radio" name="sexo" value="f" id="sexo" required> Feminino
+                        </div>
+                        <br><br>
+                        <div class="col-md-6 offset-md-3">
+                            <input type="submit" value="Calcular" class="btn btn-primary">
+                            <input type="reset" value="Limpar" class="btn btn-outline-primary">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+        </body>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
