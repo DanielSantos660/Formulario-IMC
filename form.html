@@ -43,13 +43,16 @@
                         <div class="col-md-6 offset-md-3">
                             <label for="sexo" class="h4">Sexo:</label>
                             <br>
-                            <input type="radio" name="sexo" value="m" id="sexo" required> Masculino
-                            <input type="radio" name="sexo" value="f" id="sexo" required> Feminino
+                            <input type="radio" name="sexo" value="M" id="sexo" required> Masculino
+                            <input type="radio" name="sexo" value="F" id="sexo" required> Feminino
                         </div>
                         <br><br>
-                        <div class="col-md-6 offset-md-3">
-                            <input type="submit" value="Calcular" class="btn btn-primary">
-                            <input type="reset" value="Limpar" class="btn btn-outline-primary">
+                        <div class="col-md-6 offset-md-3 d-flex justify-content-between align-items-center">
+                            <div>
+                                <input type="submit" value="Calcular" class="btn btn-primary">
+                                <input type="reset" value="Limpar" class="btn btn-outline-primary">
+                            </div>
+                            <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='hist.php'">Histórico de Cálculos</button>
                         </div>
                     </fieldset>
                 </form>
